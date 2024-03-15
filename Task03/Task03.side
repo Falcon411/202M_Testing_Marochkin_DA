@@ -1,0 +1,1249 @@
+{
+  "id": "31a55f67-7580-4c84-b468-e4e96aa32cfc",
+  "version": "2.0",
+  "name": "Task03",
+  "url": "https://demowebshop.tricentis.com",
+  "tests": [{
+    "id": "c9fb0132-b3d4-4a08-ab9c-de69dd4c62b7",
+    "name": "1. Авторизация пользователя",
+    "commands": [{
+      "id": "9466997a-f6f7-4ae5-a9dc-ae09bdac00f7",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e095fbe-1b32-4775-95a5-d5a522b07cf2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "931c5070-a652-409b-a173-d3e8b6ae1ea7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[@href= '/login']",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.ico-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "902b3d96-6f1b-4049-bf39-8d0e1567dea6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href= '/login']",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.ico-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88ab5946-33ee-4bc8-bc83-29073a2e28d3",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "033d106c-cb90-408f-9214-577005ce2697",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [],
+      "value": "sokolov.mitya1986@gmail.com"
+    }, {
+      "id": "b1c8750d-cfeb-4d52-a7b5-27da8e91a355",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [],
+      "value": "Stalker1986"
+    }, {
+      "id": "8f062699-ff98-44b2-a61c-1555403536af",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Log in']",
+      "targets": [
+        ["css=.login-button", "css:finder"],
+        ["xpath=//input[@value='Log in']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "784901e7-43b6-4739-a87e-0f4f8a33f52b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[@href='/customer/info']",
+      "targets": [
+        ["linkText=sokolov.mitya1986@gmail.com", "linkText"],
+        ["css=ul:nth-child(1) .account", "css:finder"],
+        ["xpath=//a[contains(text(),'sokolov.mitya1986@gmail.com')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/customer/info')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'sokolov.mitya1986@gmail.com')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "9fd4fa1d-10f4-4e6a-a3b0-fe3361b98790",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//a[@href='/customer/info']",
+      "targets": [],
+      "value": "sokolov.mitya1986@gmail.com"
+    }]
+  }, {
+    "id": "3955b659-4be8-449c-b49f-574cbb373094",
+    "name": "2. Просмотр категорий и подкатегорий товаров магазина",
+    "commands": [{
+      "id": "645a71f2-b65e-458b-a371-7d30dae44c25",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66bdcddf-0a09-4e06-a3a8-bafd5b6cc796",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9316d507-d54b-41c4-9db2-0596acae6cec",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "119075c9-3e59-4e53-a3b1-7b96d3e8c37e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c76c1aa4-1940-4df1-815e-65756fe95769",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "8d8d6f96-d25d-4064-aca7-b373b6cd4539",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Books"
+    }, {
+      "id": "3c49f5d2-6403-4822-9366-1745bf6795db",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/computers']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "503e9048-fb2b-43a0-b6e0-68b13b346eab",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "c686c082-599a-4014-a32f-20c174fe7b2c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Computers"
+    }, {
+      "id": "589d615b-0336-4c95-b1df-18b7bcdfc01c",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[@href='/computers']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7a6df80-2487-45df-8267-0cfadfef0a79",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//a[@href='/desktops']",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "00646d80-cf92-4d7f-9d70-a14d3f5d8e09",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/desktops']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d4ac40af-ad80-43fe-ae9f-33676791fad8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "fde4121f-040f-4694-9933-80dedf2ea730",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Desktops"
+    }, {
+      "id": "fa9b39b2-8196-49e8-b2c5-28023b3f7a04",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[@href='/computers']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e6bcaad3-4231-466f-bf9a-4a9b135956db",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//a[@href='/notebooks']",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "20a48008-84a8-4793-aac4-35f87bbd3652",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/notebooks']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b75315f-a2ee-4e26-8f6f-83133ec369d5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "c84a7a2e-b415-42ba-81cf-1d628ce0baa7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Notebooks"
+    }, {
+      "id": "de69f20a-fee4-4d7e-9a62-a806aa9d2779",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[@href='/computers']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b36a71d-a301-4581-9b42-4ad0fdaff8e1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//a[@href='/accessories']",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "49299161-38b8-4773-b2e9-ca3272d8f405",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/accessories']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e49ec31-498e-476b-ac56-23a5aa24cd6d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "ed290739-2854-4d07-8e98-2958db718fca",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Accessories"
+    }, {
+      "id": "7200b538-bb29-4ffc-b1b5-df7243688151",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/electronics']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2ee48822-8035-4db5-9631-3f0016808c6e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "9cfc0070-1872-4e30-95f8-07b3df51f878",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Electronics"
+    }, {
+      "id": "dc72c116-91f0-4f43-be47-8386c7a12cce",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[@href='/electronics']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b23a214d-e0cd-44f8-ab7c-deefa7dbe6a1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//a[@href='/camera-photo']",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "46798862-fa4a-440f-8cb3-753bba2cc230",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/camera-photo']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b846421-2536-4b9a-bcb3-fdc6b8fcf3cc",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "dd37ef5c-9cfd-4c99-9129-4222ea1caa7c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Camera, photo"
+    }, {
+      "id": "2fa1cd8b-3ce6-4811-9843-499f1a126601",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[@href='/electronics']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "476384a5-5e0a-494d-a161-7be5fd6d8afb",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//a[@href='/cell-phones']",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "302a0a9f-3da8-42db-92f3-f21e7cdd3d09",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/cell-phones']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e612f99-455d-4513-9da5-dc98ea1fcc1c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "b868b53a-3e6d-442b-bc94-d491214f2bbf",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Cell phones"
+    }, {
+      "id": "bb89d2d8-7c6a-4233-b91a-2b79e883def4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/apparel-shoes']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cdefbf8-4528-4b96-a28e-ab270be1c16d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "2493ef23-4d8e-4f39-b963-1d80662db1bf",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Apparel & Shoes"
+    }, {
+      "id": "3891138c-d1bc-492b-9772-c9d43ffbf221",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/digital-downloads']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d88b3343-e32b-4388-8e37-e97dcb9b9a74",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "481ea19a-461d-4d24-b853-85618c6e71c0",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Digital downloads"
+    }, {
+      "id": "e8c685fc-51da-4f02-9166-a1a0d0a0e181",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/jewelry']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0d729a9-178d-4117-a028-b3245923994e",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "cdd7bde7-5514-4d76-8554-9c1d32f92fbd",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Jewelry"
+    }, {
+      "id": "aa972ec0-b454-45a2-857d-6fb34f4d9b49",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/gift-cards']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bab9c8eb-b8c2-482e-aac6-18513cee5cde",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Books')]", "xpath:innerText"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "cb39f588-4d6f-48cf-9298-fee6785e5569",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='page-title']//h1",
+      "targets": [],
+      "value": "Gift Cards"
+    }]
+  }, {
+    "id": "b9376467-f7f3-44cb-b7bc-44994f0a38e7",
+    "name": "3. Добавления товара в список желаемого",
+    "commands": [{
+      "id": "204d3837-3aae-46de-ae4b-2621b2237c44",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3c323949-ff28-446c-b189-311250f9df5e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8965187b-2b88-4011-88d0-b0d51d5d8e51",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "b7661eec-0fe9-4ac8-a06a-b67076a4f785",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68bc649d-36c2-407c-95e2-2a4b5f136e1a",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "8aa6579f-dbc2-4afb-adc8-c4ff7349b0c0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[@href='/computing-and-internet'])[2]",
+      "targets": [
+        ["linkText=Health Book", "linkText"],
+        ["css=.item-box:nth-child(5) .details a", "css:finder"],
+        ["xpath=//a[contains(text(),'Health Book')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/health')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div[2]/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Health Book')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b3d0e65-056a-4207-946c-99759c0d54e9",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@class='product-name']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "441433d8-47cb-48ca-a275-3eec3127fdaa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@id,'add-to-wishlist-button')]",
+      "targets": [
+        ["id=add-to-wishlist-button-22", "id"],
+        ["css=#add-to-wishlist-button-22", "css:finder"],
+        ["xpath=//input[@id='add-to-wishlist-button-22']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[7]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10c500f9-3e27-421c-9e6d-c0d05d782f8d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/wishlist']",
+      "targets": [
+        ["css=.ico-wishlist > .cart-label", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3446c51e-7d14-41c0-8959-2dc6d02a0ce8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@name='updatecart']",
+      "targets": [
+        ["name=updatecart", "name"],
+        ["css=.update-wishlist-button", "css:finder"],
+        ["xpath=//input[@name='updatecart']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "ebdf1721-1d0f-472a-975f-1fc4e462c7bc",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "xpath=//div[@class='wishlist-content']",
+      "targets": [
+        ["css=.wishlist-content", "css:finder"],
+        ["xpath=//div[4]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "The wishlist is empty!"
+    }]
+  }, {
+    "id": "f0ea0539-f40b-4b1c-9350-a321bd38cd44",
+    "name": "4. Добавления товара в корзину",
+    "commands": [{
+      "id": "a1207229-cb55-4b39-bb97-d44558e0a6b7",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f75d5e11-1797-4359-a924-1ad378a7b5c8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41581627-7152-4198-83bf-4dab4436d52c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "209fb5ec-b033-4847-8654-f33d37eba4ac",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "090b6d92-6e37-4ce0-8b36-74ab1080de96",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "0ab68c70-c94b-444e-a9b4-0a9ed41ffb33",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[@href='/science'])[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8edbfcf2-2073-4313-b41e-4aa98ec28d90",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@class='product-name']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "cc493723-3495-4a15-9050-86570fdbb54c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@id,'add-to-cart-button')]",
+      "targets": [
+        ["id=add-to-wishlist-button-22", "id"],
+        ["css=#add-to-wishlist-button-22", "css:finder"],
+        ["xpath=//input[@id='add-to-wishlist-button-22']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[7]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c36d179-40de-4345-b445-9618a9406ed6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/cart']",
+      "targets": [
+        ["css=.ico-wishlist > .cart-label", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fd9da78-1fcc-411c-8229-858ae9f2a8b2",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@name='updatecart']",
+      "targets": [
+        ["name=updatecart", "name"],
+        ["css=.update-wishlist-button", "css:finder"],
+        ["xpath=//input[@name='updatecart']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "baea6df7-17f4-4b9b-8ce6-2e0bdfa9e6c1",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "xpath=//div[@class='order-summary-content']",
+      "targets": [
+        ["css=.wishlist-content", "css:finder"],
+        ["xpath=//div[4]/div/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "Your Shopping Cart is empty!"
+    }]
+  }, {
+    "id": "8a6cbec8-7f90-432c-a853-2d286c14acdf",
+    "name": "5. Удаление товара из списка желаемого",
+    "commands": [{
+      "id": "eb18ab08-9260-4752-9c53-a2a705df398e",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d5106dfa-01ff-4ab2-8af6-74dc84c61fc9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae988f68-7208-4e66-8ac2-06910faa86b4",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "b62caf65-9cdc-4d65-99a6-b178a19679b9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c5e7751-af2d-4bb4-a03a-3a48ffd418ba",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "d0dd2984-e4b6-481f-9d37-e9e76465b64e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[@href='/health'])[2]",
+      "targets": [
+        ["linkText=Health Book", "linkText"],
+        ["css=.item-box:nth-child(5) .details a", "css:finder"],
+        ["xpath=//a[contains(text(),'Health Book')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/health')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div[2]/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Health Book')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b79792a3-2a79-492c-9edb-9c8a4579d646",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@class='product-name']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "b9be28d7-8dda-45ed-8be0-21efbca6b36e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@id,'add-to-wishlist-button')]",
+      "targets": [
+        ["id=add-to-wishlist-button-22", "id"],
+        ["css=#add-to-wishlist-button-22", "css:finder"],
+        ["xpath=//input[@id='add-to-wishlist-button-22']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[7]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8934588f-abba-4449-ad3c-e907f96896e2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/wishlist']",
+      "targets": [
+        ["css=.ico-wishlist > .cart-label", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "805cb205-656a-4ae7-8db5-ec7bd7fd5fc5",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@name='updatecart']",
+      "targets": [
+        ["name=updatecart", "name"],
+        ["css=.update-wishlist-button", "css:finder"],
+        ["xpath=//input[@name='updatecart']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "41424422-b64a-4315-acfb-b91188e7ddd9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='removefromcart']",
+      "targets": [
+        ["name=removefromcart", "name"],
+        ["css=.remove-from-cart > input", "css:finder"],
+        ["xpath=//input[@name='removefromcart']", "xpath:attributes"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a02490c-e51d-4c03-985a-0edea804ad76",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='updatecart']",
+      "targets": [
+        ["css=.ico-wishlist > .cart-label", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf19e405-22ff-4b2a-8281-b6c61c27098d",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "07e79b46-7675-47e4-9ff8-ff821946f232",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='wishlist-content']",
+      "targets": [],
+      "value": "The wishlist is empty!"
+    }]
+  }, {
+    "id": "ec5e8912-3a6f-46ff-8a1a-7f77c8f1c057",
+    "name": "6. Удаление товара из корзины",
+    "commands": [{
+      "id": "b57439ab-84b5-46f0-9779-873a015accb4",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e64211bb-e97a-4144-8652-7743de2505aa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a4c6426-d02b-413c-a2c5-6b47fba25818",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "53c218d7-4d39-495f-8667-594777168cfe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a943516-5892-4dbc-87de-e5dfa36495a8",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "a1a6622b-5cd6-4c37-98eb-6b5e96bbfa15",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[@href='/health'])[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "39f1cb37-04dd-4424-8e81-e1ed1423043c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@class='product-name']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "c99c75d4-570a-495e-adfd-c04163a4b4bb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@id,'add-to-cart-button')]",
+      "targets": [
+        ["id=add-to-wishlist-button-22", "id"],
+        ["css=#add-to-wishlist-button-22", "css:finder"],
+        ["xpath=//input[@id='add-to-wishlist-button-22']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[7]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ed45894-04cc-4c29-8ae2-42518fcd97c8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/cart']",
+      "targets": [
+        ["css=.ico-wishlist > .cart-label", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51ec9aa9-7eaf-4df4-948b-14f0714fb283",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@name='updatecart']",
+      "targets": [
+        ["name=updatecart", "name"],
+        ["css=.update-wishlist-button", "css:finder"],
+        ["xpath=//input[@name='updatecart']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "a9ccf3f8-a9ac-486e-ad7b-c24b96a6dca1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='removefromcart']",
+      "targets": [
+        ["name=removefromcart", "name"],
+        ["css=.remove-from-cart > input", "css:finder"],
+        ["xpath=//input[@name='removefromcart']", "xpath:attributes"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0085c765-ce5a-4179-902d-3686c3ca9caa",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='updatecart']",
+      "targets": [
+        ["css=.ico-wishlist > .cart-label", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5166b297-2b42-4bd1-b97e-7b544eaaabd4",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b00a06a-bf81-4b65-9321-6d65e27893dd",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//div[@class='order-summary-content']",
+      "targets": [],
+      "value": "Your Shopping Cart is empty!"
+    }]
+  }, {
+    "id": "9736dafb-f89c-414d-ad88-4251e58c593f",
+    "name": "7. Корректное отображение итоговой стоимости товаров в корзине",
+    "commands": [{
+      "id": "0b13aea7-5792-4bf3-a9a6-01ffaf733a6c",
+      "comment": "",
+      "command": "open",
+      "target": "https://demowebshop.tricentis.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "566f5e17-9826-4746-a173-d47f63ba4c2c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1080",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2f80960-773c-4d8e-ba3a-bc8b2f3499ac",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "ae05998f-6ddb-44ee-8b3f-c632b2b9188f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/books']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eba2a1b0-17b6-476d-b026-d1a00c759df7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "166e92cb-16d7-4b7b-b951-fdb386daa83f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[@href='/health'])[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67ff447d-720a-4321-a6fa-78bd2f5bbfcf",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@class='product-name']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "1b34ddbe-2bc5-4346-92a2-e9f77f070df2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@id,'add-to-cart-button')]",
+      "targets": [
+        ["id=add-to-wishlist-button-22", "id"],
+        ["css=#add-to-wishlist-button-22", "css:finder"],
+        ["xpath=//input[@id='add-to-wishlist-button-22']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[7]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "415690a3-b10a-43af-af91-c484f94c0490",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/cart']",
+      "targets": [
+        ["css=.ico-wishlist > .cart-label", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "553239dc-d774-4b8a-8e97-853f4f687063",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@name='updatecart']",
+      "targets": [
+        ["name=updatecart", "name"],
+        ["css=.update-wishlist-button", "css:finder"],
+        ["xpath=//input[@name='updatecart']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "a994124a-0e18-466d-94e8-4cf50f61ea56",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//span[@class='product-price']",
+      "targets": [],
+      "value": "10.00"
+    }, {
+      "id": "c74e5d54-e775-4e3f-85c0-0b6055d6f0f4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[@href='/computers']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1fd3cfd-e529-4d0d-9336-b134b82fa578",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=//a[@href='/desktops']",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "b03123b7-8bb5-4819-8458-106da4bc02f2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/desktops']",
+      "targets": [
+        ["css=.hover", "css:finder"],
+        ["xpath=//a[contains(text(),'Books')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/books')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3087330b-57a1-496a-8ef6-902d10d84644",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//strong[@class='current-item']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "d84e56bd-7a35-4bc3-bd83-c14a94c58f17",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//a[@href='/build-your-cheap-own-computer'])[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95b4e637-d6b6-4daa-b4e1-e1f94719d679",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//div[@class='product-name']",
+      "targets": [
+        ["css=.current-item", "css:finder"],
+        ["xpath=//li[2]/strong", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "43776768-610a-43b3-a2dd-69ee5a39b163",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[contains(@id,'add-to-cart-button')]",
+      "targets": [
+        ["id=add-to-wishlist-button-22", "id"],
+        ["css=#add-to-wishlist-button-22", "css:finder"],
+        ["xpath=//input[@id='add-to-wishlist-button-22']", "xpath:attributes"],
+        ["xpath=//form[@id='product-details-form']/div/div/div[2]/div[7]/div/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b76ecb62-d713-45d4-802f-a0de1f627491",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@href='/cart']",
+      "targets": [
+        ["css=.ico-wishlist > .cart-label", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Wishlist')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "86bce930-f821-4734-b06a-a33447f93a56",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//input[@name='updatecart']",
+      "targets": [
+        ["name=updatecart", "name"],
+        ["css=.update-wishlist-button", "css:finder"],
+        ["xpath=//input[@name='updatecart']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "10000"
+    }, {
+      "id": "adc21c7a-e370-4fd4-b76a-5af9b1e5b9f5",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//span[@class='product-price']",
+      "targets": [],
+      "value": "825.00"
+    }]
+  }],
+  "suites": [{
+    "id": "0cd36c1b-99b6-4544-9cf7-922e622bc41e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["c9fb0132-b3d4-4a08-ab9c-de69dd4c62b7"]
+  }],
+  "urls": ["https://forms.truvisibility.com/#/forms", "https://demowebshop.tricentis.com/"],
+  "plugins": []
+}
